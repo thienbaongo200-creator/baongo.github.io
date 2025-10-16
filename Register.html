@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng Ký Tài Khoản</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .register-section {
+      max-width: 450px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .register-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .register-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .register-section label {
+      margin-top: 10px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .register-section input {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .register-section button {
+      margin-top: 20px;
+      padding: 10px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .register-section button:hover {
+      background: #218838;
+    }
+
+    .register-section p {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .register-section a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .register-section a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="register-section">
+    <div class="container">
+      <h2>Đăng Ký</h2>
+      <form id="registerForm" onsubmit="return redirectToLogin()">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Xác nhận mật khẩu:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
+
+        <button type="submit">Tạo Tài Khoản</button>
+      </form>
+      <p>Đã có tài khoản? <a href="Login.html">Đăng nhập ngay</a></p>
+    </div>
+  </section>
+
+  <script>
+    function redirectToLogin() {
+      alert("Đăng ký thành công! Đang chuyển đến trang đăng nhập...");
+      window.location.href = "Login.html";
+      return false;
+    }
+  </script>
+
+</body>
+</html>
