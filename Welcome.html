@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chào Mừng đến BNStudio</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #0f0f0f 0%, #000000 100%);
+      color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .welcome-container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(20, 20, 20, 0.85);
+      border-radius: 16px;
+      box-shadow: 0 0 25px #00ffff;
+      animation: fadeIn 1s ease-in-out;
+      max-width: 700px;
+    }
+
+    .welcome-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #cccccc;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      margin: 10px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      color: #0f0f0f;
+      background: linear-gradient(45deg, #00ffff, #00ff99);
+      box-shadow: 0 0 12px #00ffff;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ff99;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .welcome-container {
+        padding: 20px;
+      }
+      h1 { font-size: 32px; }
+      p { font-size: 16px; }
+      .btn { padding: 10px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="welcome-container">
+    <img src="assets/img/welcome_banner.webp" alt="Welcome Banner" class="welcome-image" />
+    <h1>Chào mừng đến với BNStudio</h1>
+    <p>Thiết kế giao diện đẹp – Trải nghiệm mượt mà – Tăng trưởng bền vững</p>
+    <a href="Login.html" class="btn">Đăng Nhập</a>
+    <a href="Register.html" class="btn">Đăng Ký</a>
+  </div>
+
+</body>
+</html>
